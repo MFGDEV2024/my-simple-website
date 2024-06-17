@@ -7,9 +7,44 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>This is my simple website.</p>
-    <p>Here's one more elite sentence</p>
+
+    <div class="container">
+        <div class = "toprow">
+            <h1>Calcybus</h1>
+            <p>Mental math practice</p>
+            
+        </div>
+        <div class = "top">
+            <div class = topLHS>
+                <p id = MATHcand, type = number> 5 </p>
+                <p id = MATHoperator>X</p>
+                <p id = MATHplier>5</p>
+                <input type="text" id = "inputSentence" placeholder="Input answer">
+                <button id="update-button">Calculate</button>
+            </div>
+            <div class = "topRHS">
+                <div class="inline-container">
+                    <p> L/U bound </p>
+                    <input class= "mathSelections" type="number" id="mathCAND_Lbound" placeholder="0">
+                    <input class= "mathSelections" type="number" id="mathCAND_Ubound" placeholder="5">
+                </div>
+                <div class="inline-container">
+                    <p> Oper </p>
+                    <input class= "operatorSelections" type="text" id="math_Operator" placeholder="x">
+                </div>
+                <div class="inline-container">
+                    <p> L/U bound </p>
+                    <input class= "mathSelections" type="number" id="mathPLIER_Lbound" placeholder="0">
+                    <input class= "mathSelections" type="number" id="mathPLIER_Ubound" placeholder="5">
+                </div>
+                <p> </p>
+                <p> </p>              
+            </div>
+        </div>
+        <div class="bottom">
+            <p id="updateable-sentence">This is the bottom section.</p>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

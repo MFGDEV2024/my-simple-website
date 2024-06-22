@@ -1,3 +1,5 @@
+/*use # for id, us . for class*/
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -61,12 +63,11 @@ button {
     margin-top: 10px;
 }
 
-input[type="text"] {
+
+#inputSentence {
     font-family: Arial, sans-serif;
-    padding: 10px;
-    margin-top: 10px;
-    width: 80%;
     box-sizing: border-box;
+    align-items: center;
     text-align: center;
 }
 

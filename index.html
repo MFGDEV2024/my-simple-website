@@ -3,46 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Simple Website</title>
+    <title>Mental math</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="container">
         <div class = "toprow">
-            <h1>Calcybus</h1>
+            <h1>Calculations</h1>
             <p>Mental math practice</p>
             
         </div>
         <div class = "top">
             <div class = topLHS>
-                <p id = MATHcand, type = number> 5 </p>
-                <p id = MATHoperator>X</p>
-                <p id = MATHplier>5</p>
-                <input type="text" id = "inputSentence" placeholder="Input answer">
-                <button id="update-button">Calculate</button>
+                <div id = MATHcand type = "number" value = 5> 5 </div>
+                <div id = MATHoperator>+</div>
+                <div id = MATHplier type = "number" value = 5>5</div>
+                <div>
+                    <input type="number" id = "userAnswer" placeholder="Input answer">
+                </div>
+                <div>
+                    <button id="calc-button">Calculate</button>
+                </div>
+                <div>
+                    <button id="refresh-button">Refresh</button>
+                </div>
             </div>
             <div class = "topRHS">
                 <div class="inline-container">
                     <p> L/U bound </p>
-                    <input class= "mathSelections" type="number" id="mathCAND_Lbound" placeholder="0">
-                    <input class= "mathSelections" type="number" id="mathCAND_Ubound" placeholder="5">
+                    <input class= "mathSelections" type="number" id="mathCAND_Lbound" value=10>
+                    <input class= "mathSelections" type="number" id="mathCAND_Ubound" value=99>
                 </div>
                 <div class="inline-container">
                     <p> Oper </p>
-                    <input class= "operatorSelections" type="text" id="math_Operator" placeholder="x">
+                    <select class= "operatorSelections" type="text" id="math_Operator" placeholder= &divide>
+                        <option> + </option>
+                        <option> - </option>
+                        <option> x </option>
+                        <option> &divide </option>
+                    </select>
                 </div>
                 <div class="inline-container">
                     <p> L/U bound </p>
-                    <input class= "mathSelections" type="number" id="mathPLIER_Lbound" placeholder="0">
-                    <input class= "mathSelections" type="number" id="mathPLIER_Ubound" placeholder="5">
+                    <input class= "mathSelections" type="number" id="mathPLIER_Lbound" value=10>
+                    <input class= "mathSelections" type="number" id="mathPLIER_Ubound" value=99>
                 </div>
-                <p> </p>
-                <p> </p>              
+                <div> </div>
+                <div> </div>              
             </div>
         </div>
         <div class="bottom">
-            <p id="updateable-sentence">This is the bottom section.</p>
+            <p id="answerFeedback">Enter an answer and click calculate</p>
         </div>
     </div>
     <script src="script.js"></script>

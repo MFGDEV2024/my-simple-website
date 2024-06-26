@@ -83,6 +83,10 @@ function loadfromlocalstorage () {
                     result = 'Divided by zero!'
                 }
                 break;
+            case '^':
+                    result = MATHcandValue ** MATHplierValue
+                
+                break;
         }
 
         if (result === userAnswerValue){
